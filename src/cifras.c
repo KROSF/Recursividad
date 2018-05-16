@@ -6,7 +6,7 @@ int cifrasRecursivo(int x,int y);
 
 int main(void)
 {
-    printf("%d\n",cifras(-100));
+    printf("%d",cifras(-100));
     return 0;
 }
 

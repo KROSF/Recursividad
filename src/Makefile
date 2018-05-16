@@ -1,24 +1,61 @@
 CC = gcc
 CFLAGS  = -std=c11 -g -Wall
-SRC = main.c
+SRC = cifras.c potencia.c parejasvector.c intercambiar.c vectorsimetrico.c \
+	ordenacionseleccion.c
 OBJS := $(SRC:.c=.o)
-EXE = recursividad.out
+EXES = cifras potencia parejasvector intercambiar vectorsimetrico\
+	ordenacionseleccion binariodecimal
 
-all: $(EXE)
+all: $(EXES)
 
-run: $(EXE)
-	./$<
+run: $(EXES)
+	@echo "Cifras"
+	@./cifras
+	@echo "\nPotencia"
+	@./potencia
+	@echo "\nParejasvector"
+	@./parejasvector
+	@echo "\nIntercambiar"
+	@./intercambiar
+	@echo "\nVectorsimetrico"
+	@./vectorsimetrico
+	@echo "\nOrdenacionseleccion"
+	@./ordenacionseleccion
+	@echo "\nBinariodecimal"
+	@./binariodecimal
 
-run_v: $(EXE)
-	valgrind ./$<
-
-$(EXE): $(OBJS)
+cifras: cifras.o
 	$(CC) $(CFLAGS) $^ -o $@
-	@rm -f $(OBJS)
+	@rm -f cifras.o
+
+potencia: potencia.o
+	$(CC) $(CFLAGS) $^ -o $@
+	@rm -f potencia.o
+
+parejasvector: parejasvector.o
+	$(CC) $(CFLAGS) $^ -o $@
+	@rm -f parejasvector.o
+
+intercambiar: intercambiar.o
+	$(CC) $(CFLAGS) $^ -o $@
+	@rm -f intercambiar.o
+
+vectorsimetrico: vectorsimetrico.o
+	$(CC) $(CFLAGS) $^ -o $@
+	@rm -f vectorsimetrico.o
+
+ordenacionseleccion: ordenacionseleccion.o
+	$(CC) $(CFLAGS) $^ -o $@
+	@rm -f ordenacionseleccion.o
+
+binariodecimal: binariodecimal.o
+	$(CC) $(CFLAGS) $^ -lm -o $@
+	@rm -f binariodecimal.o
+
+binariodecimal.o : binariodecimal.c
+	$(CXX) -c $(CXXFLAGS) $< -lm -o $@
 
 $(OBJS): $(SRC)
 
-.PHONY: clean
-
 clean:
-	rm -f $(EXE)
+	rm $(EXES)

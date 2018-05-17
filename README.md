@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html>
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>README.md</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
 
-<body class="stackedit">
-  <div class="stackedit__html"><h1 id="recursividad-">Recursividad <a href="https://travis-ci.com/KROSF/Recursividad"><img src="https://travis-ci.com/KROSF/Recursividad.svg?branch=master" alt="Build Status"></a></h1>
+---
+
+<h1 id="recursividad-">Recursividad <a href="https://travis-ci.com/KROSF/Recursividad"><img src="https://travis-ci.com/KROSF/Recursividad.svg?branch=master" alt="Build Status"></a></h1>
 <ul>
 <li>
 <p>Escribe una función recursiva cifras que reciba un número en <code>base 10</code> y devuelva cuántas cifras tiene ese número.</p>
@@ -59,7 +53,4 @@
 </ul>
 </li>
 </ul>
-</div>
-</body>
 
-</html>

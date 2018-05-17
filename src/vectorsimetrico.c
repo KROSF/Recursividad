@@ -32,6 +32,6 @@ int llamada_simetrico(int alpha,int size ,const int* vector ,int cont)
 {
     if (cont == size/2) return 1;
     if(alpha < size/2 && vector[alpha] == vector[size-(alpha+1)])
-    return llamada_simetrico(alpha+1,size,vector,cont+1);
+    return llamada_simetrico(++alpha,size,vector,++cont);
     else return 0;
 }

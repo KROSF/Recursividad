@@ -24,3 +24,11 @@
 
 * Diseña un procedimiento recursivo que realice la ordenación por selección de los elementos de un vector.
     * [Implementación](./src/ordenacionseleccion.c)
+
+* Dado un vector de enteros estrictamente positivos A[1..n], n ≥ 1, diseña un 
+algoritmo que obtenga recursivamente el número de parejas (j,k), 1≤ j ≤ n, 1≤ k ≤ n.
+	 * [Implementación](./src/parejasjk.c)
+
+* Dado un vector A de n enteros ordenado crecientemente, 
+diseña una función recursiva que determine si existen en el vector dos elementos que sumen el valor de x.
+	* [Implementación](./src/sumax.c)

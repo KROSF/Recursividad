@@ -1,5 +1,5 @@
 
-# Recursividad [![Build Status](https://travis-ci.com/KROSF/Recursividad.svg?branch=master)](https://travis-ci.com/KROSF/Recursividad)
+# Recursividad [![Build Status](https://travis-ci.com/KROSF/Recursividad.svg?branch=master)](https://travis-ci.com/KROSF/Recursividad)  [![Build Status](https://dev.azure.com/rodrigosanabria22/krosf/_apis/build/status/KROSF.Recursividad)](https://dev.azure.com/rodrigosanabria22/krosf/_build/latest?definitionId=3)
 
 * Escribe una función recursiva cifras que reciba un número en `base 10` y devuelva cuántas cifras tiene ese número.
     * [Implementación](./src/binariodecimal.c)

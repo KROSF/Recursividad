@@ -2,16 +2,9 @@
 # Build your C/C++ project with GCC using make.
 # Add steps that publish test results, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/vsts/pipelines/apps/c-cpp/gcc
-jobs:
-- job: Linux
-  pool:
-    vmImage: 'ubuntu-16.04'
-  steps:
-  - script: |
+pool:
+  vmImage: 'Ubuntu 16.04'
+ steps:
+- script: |
     cd src/ && make run
-- job: macOS
-  pool:
-    vmImage: 'xcode9-macos10.13'
-  steps:
-  - script: |
-    cd src/ && make run
+  displayName: 'make'

@@ -9,11 +9,11 @@ jobs:
   steps:
   - script: |
     cd src/ && make run
-  displayName: 'make'
+    displayName: 'make'
 - job: macOS
   pool:
     vmImage: 'xcode9-macos10.13'
   steps:
   - script: |
     cd src/ && make run
-  displayName: 'make'
+    displayName: 'make'

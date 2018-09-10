@@ -12,13 +12,14 @@
 
 jobs:
 - job: Linux
-pool:
-  vmImage: 'Ubuntu 16.04'
-  steps:
-  - script: cd src/ && make run
-    displayName: 'make run'
-pool:
-  vmImage: 'xcode9-macos10.13'
-  steps:
-  - script: cd src/ && make run
-    displayName: 'macos make run'
+  pool:
+    vmImage: 'Ubuntu 16.04'
+    steps:
+    - script: cd src/ && make run
+      displayName: 'make run'
+- job: macOS
+  pool:
+    vmImage: 'xcode9-macos10.13'
+    steps:
+    - script: cd src/ && make run
+      displayName: 'macos make run'

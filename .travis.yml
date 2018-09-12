@@ -6,6 +6,5 @@ compiler:
   - gcc
   - clang
 script:
-    - make run
     - cd src/
     - make run

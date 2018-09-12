@@ -15,8 +15,6 @@ jobs:
   pool:
     vmImage: 'Ubuntu 16.04'
   steps:
-  - script: make run
-    displayName: 'testing new recursives'
   - script: cd src/ && make run
     displayName: 'make run'
 - job: macOS

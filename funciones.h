@@ -85,7 +85,7 @@ void insertion_sort(int* v, int s){
 int _w_selection_sort(int* v, int s, int i, int j,int min){
     if (i == s-1) return 1;
     if (j == s)
-        return _w_selection_sort(v,s,i,j+1,min);
+        return _w_selection_sort(v,s,i,i+2,min);
     if (v[j] < v[min])
         return _w_selection_sort(v,s,i,j+1,j);
     swap(&v[min],&v[i]);
